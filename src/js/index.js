@@ -9,18 +9,5 @@ pages.forEach(page => {
     document.body.innerHTML += page.innerHTML;
 });
 
-let PageID = [
-    "#home-page",
-    "#about-me",
-    "#update-log"
-]
-
 changePage("#home-page");
         
-function changePage(link){
-    $(".page").hide();
-    if(PageID.includes(link)){
-        $(link).show();
-    }
-    history.pushState(null, null, link);
-}
