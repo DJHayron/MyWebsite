@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="This is my first time to try to make a website for myself">
         <meta name="author" content="Hayron竑">
-        <script src="./src/router/router.js"></script>
+        <script type="module" src="./src/js/index.js" defer></script>        
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -15,131 +15,6 @@
     </head>
 
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#home-page" onclick="changePage('#home-page')">主頁</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about-me" onclick="changePage('#about-me')">關於我</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#update-log" onclick="changePage('#update-log')">更新日誌</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-            </nav>
-        </header>
-
-        <div id="home-page" class="page">
-            <h1>主頁</h1>
-            <div>
-                我是台中科技大學資訊科的大一新生，
-                正對網頁設計進行琢磨，但對美術設計沒有興趣。<br>
-                目標是了解Website的前端工程、語法、框架、後端工程...等<br>
-                正在練習自幹 html css javascript 三大基礎技術<br>
-                預計事成之後 開始學習Vue.js框架並進行改版的動作<br>
-            </div>
-        </div>
-
-        <div id="about-me" class="page">
-          <h1>關於我</h1>
-          <div>
-            經歷
-            <ul>
-              <li>高雄高工資訊科畢業</li>
-            </ul>
-          </div>
-          <div>
-            個人資料
-            <ul>                
-              <li>暱稱:Hayron竑</li>
-              <li>科系:資訊工程系</li>
-            </ul>
-          </div>            
-          <span style="font-size: 24px;">自我介紹:</span>
-          <div>
-            目前是一名大學生，因為從國中開始喜歡「資訊科技」，因此高中選擇就讀資訊科，大學也就繼續了資訊工程的道路。<br>
-            我個人比較喜歡演算法模型與深度學習，上大學遇到一個好老師兼好朋友<a href="https://www.tershi.com/">夏特稀</a>開始接觸互聯網相關的專業。
-          </div>
-        </div>
-
-        <div id="update-log" class="page">
-          <h1>更新日誌</h1>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  2022/11/19 v0.0.0
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul>
-                    <li>建立主頁內容</li>
-                    <li>學習 git、github 基本操作與指令，並成功push到github</li>                    
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  2022/11/27 v0.0.1
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul>
-                    <li>新增 navbar</li>
-                    <li>新增頁面 #主頁</li>
-                    <li>新增頁面 #關於我</li>
-                    <li>創意 jquery製作SPA架構</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  2022/11/28 v0.0.2
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul>
-                    <li>新增頁面 #更新日誌</li>
-                    <li>更新 #關於我</li>
-                    <li>TODO: 寫一段可以簡易製作更新日誌的插件</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>                  
-        </div>
         
     </body>
 
