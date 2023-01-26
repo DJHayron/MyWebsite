@@ -21,6 +21,11 @@ const routes = [
     path: '/todo',
     name: 'TODO',
     component: () => import('@/views/MyTodo.vue')
+  },
+  {
+    path: '/askme',
+    name: '對我發問',
+    component: () => import('@/views/AskMe.vue')
   }
 ]
 

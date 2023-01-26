@@ -15,16 +15,28 @@ export default {
         return {
             updateLog: [
                 {
+                    head: '學習後端技能',
+                    body: '使用 python flask api 做為後端.比較 fetch 、 axios 前端 call api 的差異.學習 CORS 後端.使用 sqlite3 用來保存資料 練習 SQL 語法.新增 "對我發問" 發問功能.修改 "更新日誌" 日期格式.',
+                    version: 'v0.5',
+                    date: '2023/01/26'
+                },
+                {
+                    head: '新增頁面',
+                    body: '新增 "對我發問".在某處埋下了一顆彩蛋',
+                    version: 'v0.4',
+                    date: '2023/01/24~25'
+                },
+                {
                     head: '新增頁面',
                     body: '新增 "TODO".微調 "更新日誌" 版型.微調 navbar 版型',
                     version: 'v0.3',
-                    date: '2023/1/23'
+                    date: '2023/01/23'
                 },
                 {
                     head: '新增頁面',
                     body: '新增 "更新日誌"',
                     version: 'v0.2',
-                    date: '2023/1/22'
+                    date: '2023/01/22'
                 },
                 {
                     head: '環境建構',

@@ -61,6 +61,10 @@ export default {
         {
           name: 'TODO',
           path: '/todo'
+        },
+        {
+          name: '對我發問',
+          path: '/askme'
         }
       ],
       isDark: false
