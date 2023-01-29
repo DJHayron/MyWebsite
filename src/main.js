@@ -12,7 +12,18 @@ import 'flowbite'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
+// 匯入 font awesome
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+library.add(fas, fab, far)
+
 const app = createApp(App)
+
+// 載入 font awesome
+app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.use(VueAxios, axios)
 app.use(createPinia())

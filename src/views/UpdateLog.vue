@@ -15,8 +15,14 @@ export default {
         return {
             updateLog: [
                 {
+                    head: '更新頁面',
+                    body: '匯入 font-awesome-icon 套件.更新 "主頁".修正一些小錯誤',
+                    version: 'v0.6',
+                    date: '2023/01/30'
+                },
+                {
                     head: '學習後端技能',
-                    body: '使用 python flask api 做為後端.比較 fetch 、 axios 前端 call api 的差異.學習 CORS 後端.使用 sqlite3 用來保存資料 練習 SQL 語法.新增 "對我發問" 發問功能.修改 "更新日誌" 日期格式.',
+                    body: '使用 python flask api 做為後端.比較 fetch、axios request的差異.學習 CORS 後端.使用 sqlite3 用來保存資料 練習 SQL 語法.新增 "對我發問" 發問功能.修改 "更新日誌" 日期格式',
                     version: 'v0.5',
                     date: '2023/01/26'
                 },

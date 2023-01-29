@@ -7,7 +7,7 @@
             </div>
             <button type="button" @click="Send()" class="float-right focus:outline-none text-white bg-orange-400 hover:bg-orange-400 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-600">Send</button>
         </div>
-        <div class="md:w-4/5 w-1/2 h-full border-orange-400 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+        <div class="md:w-4/5 w-1/2 h-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
             <QuestionCard v-for="(item, key) in data" :key="key" :data="item"></QuestionCard>
         </div>
     </div>
@@ -23,7 +23,7 @@ export default {
     },
     data() {
         return{
-            apiUrl: 'http://127.0.0.1:80',
+            apiUrl: 'http://127.0.0.1:5000',
             data: Array
         }
     },
@@ -43,7 +43,6 @@ export default {
     created() {
         this.axios.get(this.apiUrl + '/getQuestion')
         .then( (response) => {
-            console.log(response['data']['data'])
             this.data = response['data']['data']
         })
     }
