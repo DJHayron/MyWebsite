@@ -37,7 +37,11 @@ export default {
                     isCheck: false
                 },
                 {
-                    thing: '強化深度學習，學習推播演算',
+                    thing: '學習AI相關技能、機器學習、深度學習',
+                    isCheck: false
+                },
+                {
+                    thing: '製作推播演算',
                     isCheck: false
                 },
                 {

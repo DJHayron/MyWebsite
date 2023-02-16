@@ -15,7 +15,6 @@
 
 <script>
 import QuestionCard from '@/components/QuestionCard.vue'
-import { locStub } from '@vue/compiler-core'
 
 export default {
     components: {

@@ -58,6 +58,10 @@ export default {
                 {
                     icon: ['fab', 'fa-square-facebook'],
                     path: 'https://facebook.com/'
+                },
+                {
+                    icon: ['fab', 'youtube'],
+                    path: 'https://youtube.com/'
                 }
             ]
         }
