@@ -34,7 +34,7 @@ export default {
                     question: this.$refs.question_content.value,
                 })
                 .then( (response) => alert(response['data']['status']))
-                .catch( (error) => console.log(error))
+                .catch( (error) => alert(error))
                 this.$refs.question_content.value = ''
             }
         }

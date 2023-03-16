@@ -30,31 +30,53 @@ export default {
             TODO: [
                 {
                     thing: '完成個人網站',
-                    isCheck: false
+                    isCheck: false,
+                    path: ''
                 },
                 {
                     thing: '學習架設伺服器，並讓個人網站上線',
-                    isCheck: false
+                    isCheck: false,
+                    path: ''
                 },
                 {
                     thing: '學習AI相關技能、機器學習、深度學習',
-                    isCheck: false
+                    isCheck: false,
+                    path: ''
                 },
                 {
                     thing: '製作推播演算',
-                    isCheck: false
+                    isCheck: false,
+                    path: ''
                 },
                 {
                     thing: '學習後端技術',
-                    isCheck: false
+                    isCheck: false,
+                    path: ''
                 },
                 {
                     thing: '強化資訊安全的基本觀念',
-                    isCheck: false
+                    isCheck: false,
+                    path: ''
                 },
                 {
                     thing: '完成一款獨立製作的手遊',
-                    isCheck: false
+                    isCheck: false,
+                    path: ''
+                },
+                {
+                    thing: '完成TSP蟻群算法解',
+                    isCheck: true,
+                    path: ''
+                },
+                {
+                    thing: '在個人網站中建立"學習筆記"頁面',
+                    isCheck: false,
+                    path: ''
+                },
+                {
+                    thing: '在"TODO"介面中更新成樹狀',
+                    isCheck: false,
+                    path: ''
                 }
             ]
         }

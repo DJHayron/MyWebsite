@@ -26,6 +26,11 @@ const routes = [
     path: '/askme',
     name: '對我發問',
     component: () => import('@/views/AskMe.vue')
+  },
+  {
+    path: '/project',
+    name: '作品集',
+    component: () => import('@/views/MyProject.vue')
   }
 ]
 

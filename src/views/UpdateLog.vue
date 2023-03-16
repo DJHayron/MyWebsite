@@ -2,7 +2,7 @@
     <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6">
         <div id="updateLog-content" class="w-4/5" v-for="(item, key) in updateLog" :key="key" :data="item">
             <div id="head">
-                <button type="button" @click="ReadMore(item)" class="w-full flex items-center justify-between p-5 font-medium text-left border border-gray-200 rounded-t-xl bg-gray-200 dark:bg-gray-800 dark:border-gray-900 hover:bg-gray-300 dark:hover:bg-gray-900"
+                <button type="button" @click="ReadMore(item)" class="w-full flex items-center justify-between p-5 font-medium text-left border border-gray-300 rounded-t-xl bg-gray-200 dark:bg-gray-800 dark:border-gray-900 hover:bg-gray-300 dark:hover:bg-gray-900"
                 :class="[item.isOpen ? '' : 'rounded-b-xl']">
                     <span>{{ item.head }} {{ item.version }}</span>
                     <svg data-accordion-icon class="w-6 h-6 shrink-0" :class="[item.isOpen ? 'rotate-180' : '']" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -26,6 +26,13 @@ export default {
         return {
             updateLog: [
                 {
+                    head: '更新內容',
+                    body: '更新 "TODO"內容.新增 "我的作品".修正 某些地方的版型',
+                    version: 'v0.8',
+                    date: '2023/02/16',
+                    isOpen: false
+                },
+                {
                     head: '更新頁面',
                     body: '更新 "關於我".新增 Youtube 連結.修正 "更新日誌" 中的程式',
                     version: 'v0.7',
@@ -34,7 +41,7 @@ export default {
                 },
                 {
                     head: '更新頁面',
-                    body: '匯入 font-awesome-icon 套件.更新 "主頁".修正一些小錯誤',
+                    body: '匯入 font-awesome-icon 套件.更新 "主頁".修正 一些小錯誤',
                     version: 'v0.6',
                     date: '2023/01/30',
                     isOpen: false

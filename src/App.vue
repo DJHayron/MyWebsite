@@ -65,6 +65,10 @@ export default {
         {
           name: '對我發問',
           path: '/askme'
+        },
+        {
+          name: '我的作品',
+          path: '/project'
         }
       ],
       isDark: false
