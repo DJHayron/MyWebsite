@@ -69,6 +69,10 @@ export default {
         {
           name: '我的作品',
           path: '/project'
+        },
+        {
+          name: '部落格',
+          path: '/blog'
         }
       ],
       isDark: false

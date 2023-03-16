@@ -27,7 +27,7 @@ export default {
             updateLog: [
                 {
                     head: '更新內容',
-                    body: '更新 "TODO"內容.新增 "我的作品".修正 某些地方的版型',
+                    body: '更新 "TODO"內容.新增 "我的作品".修正 某些地方的版型.新增 "部落格"',
                     version: 'v0.8',
                     date: '2023/02/16',
                     isOpen: false

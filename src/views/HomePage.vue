@@ -7,7 +7,7 @@
         TODO: 做出 作品導覽，學習筆記 等功能之後 要在主頁可以推播
      -->
     <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6">
-        <div class="absolute md:pt-10 w-4/5 text-xl font-semibold px-6">
+        <div class="absolute md:pt-10 w-4/5 text-xl font-semibold">
             <div class="md:text-5xl text-4xl">
                 你好~ 我是<span class="text-orange-400">Hayron竑</span>
             </div>

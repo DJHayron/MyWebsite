@@ -3,33 +3,41 @@ from flask_cors import CORS, cross_origin
 import sqlite3
 import re
 
-conn = sqlite3.connect('data.db')
-c = conn.cursor()
 app = Flask(__name__)
 CORS(app)
 
 @app.route("/getQuestion", methods=['GET'])
 def getQuestion():
     try:       
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
         data = c.execute(f"SELECT question, answer from Question WHERE answer!='none'")
         outData = []
         for row in data:
             outData.append({"question": row[0], "answer": row[1]})
+        conn.close()
+        
         return jsonify({"data": outData})
+
     except Exception as err:
-        return err
+        return jsonify({"status": str(err)})
 
 @app.route("/newQuestion", methods=['POST'])
 def newQuestion():
     inData = request.get_json()
+
     try:
         #TODO: 注意 sql injection 的問題
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
         c.execute(f"INSERT INTO Question (question) VALUES ('{inData['question']}')")
         conn.commit()
+        conn.close()
         print ("New Question")
         return jsonify({"status": "傳送成功"})
+
     except Exception as err:
-        return err
+        return jsonify({"status": str(err)})
 
 @app.route("/blogRender", methods=['GET'])
 def blogRender():
@@ -49,5 +57,3 @@ def blogRender():
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
-
-conn.close()
