@@ -39,8 +39,8 @@ def newQuestion():
     except Exception as err:
         return jsonify({"status": str(err)})
 
-@app.route("/blogRender", methods=['GET'])
-def blogRender():
+@app.route("/blogReader", methods=['GET'])
+def blogReader():
     try:
         pass
     except Exception as err:

@@ -1,5 +1,5 @@
 <template>
-    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6">
+    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fadeIn">
         <div id="updateLog-content" class="w-4/5" v-for="(item, key) in updateLog" :key="key" :data="item">
             <div id="head">
                 <button type="button" @click="ReadMore(item)" class="w-full flex items-center justify-between p-5 font-medium text-left border border-gray-300 rounded-t-xl bg-gray-200 dark:bg-gray-800 dark:border-gray-900 hover:bg-gray-300 dark:hover:bg-gray-900"
@@ -25,6 +25,13 @@ export default {
     data() {
         return {
             updateLog: [
+                {
+                    head: '更新內容',
+                    body: ['更新 優化navbar功能', '新增 淡入動畫', '新增 部落格card'],                    
+                    version: 'v0.9',
+                    date: '2023/03/22',
+                    isOpen: false
+                },
                 {
                     head: '更新內容',
                     body: ['更新 "TODO"內容', '新增 "我的作品"', '修正 版型.新增 "部落格"'],                    

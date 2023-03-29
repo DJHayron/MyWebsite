@@ -1,5 +1,5 @@
 <template>
-    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6">
+    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fadeIn">
         <div class="w-4/5">
             <div class="absolute border-2 border-orange-400 rounded-xl bg-gray-200 dark:bg-gray-800 flex flex-wrap p-4">
                 <div class="max-sm:m-auto mx-10 my-auto min-w-[100px] min-h-[100px] w-[100px] h-[100px] rounded-full bg-red-400">

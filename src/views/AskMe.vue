@@ -1,5 +1,5 @@
 <template>
-    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6">
+    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fadeIn">
         <div id="input" class="w-1/2 mb-6">
             <div class="mb-2">
                 <label for="default-input" class="block mb-2 text-sm font-medium">你也可以發問!! (看情況回覆)</label>

@@ -1,5 +1,5 @@
 <template>
-    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6">
+    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fadeIn">
         <div class="w-4/5">            
             <div class="mb-2 md:text-4xl text-2xl font-semibold">2023 年度清單</div>
             <ul class="space-y-1 list-inside md:text-2xl">

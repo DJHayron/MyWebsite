@@ -1,5 +1,5 @@
 <template>
-    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6">
+    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fade animate-fadeIn">
         <div class="w-4/5 h-full">
             <BlogCard v-for="(item, key) in data" :key="key" :data="item"></BlogCard>
         </div>
@@ -19,12 +19,12 @@ export default {
                 {
                     title: "test1",
                     latestUpdateDate: "YYYY/MM/DD",
-                    mainContent: `<h1>Test</h1>`
+                    mainContent: `Test`
                 },
                 {
                     title: "test2",
                     latestUpdateDate: "YYYY/MM/DD",
-                    mainContent: `<h2>Test</h2>`
+                    mainContent: `Test`
                 }
             ]
         }

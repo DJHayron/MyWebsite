@@ -6,7 +6,7 @@
         TODO: 社交區塊 超連結網址 預計 v1.0 發佈版 再更新
         TODO: 做出 作品導覽，學習筆記 等功能之後 要在主頁可以推播
      -->
-    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6">
+    <div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fadeIn">
         <div class="absolute md:pt-10 w-4/5 text-xl font-semibold">
             <div class="md:text-5xl text-4xl">
                 你好~ 我是<span class="text-orange-400">Hayron竑</span>
