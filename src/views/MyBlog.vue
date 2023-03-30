@@ -4,6 +4,7 @@
             <BlogCard v-for="(item, key) in data" :key="key" :data="item"></BlogCard>
         </div>
     </div>
+
 </template>
 
 <script>

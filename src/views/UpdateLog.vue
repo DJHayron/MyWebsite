@@ -27,13 +27,20 @@ export default {
             updateLog: [
                 {
                     head: '更新內容',
+                    body: [],                    
+                    version: 'v0.10',
+                    date: '2023/03/29',
+                    isOpen: false
+                },
+                {
+                    head: '新增內容',
                     body: ['更新 優化navbar功能', '新增 淡入動畫', '新增 部落格card'],                    
                     version: 'v0.9',
                     date: '2023/03/22',
                     isOpen: false
                 },
                 {
-                    head: '更新內容',
+                    head: '新增內容',
                     body: ['更新 "TODO"內容', '新增 "我的作品"', '修正 版型.新增 "部落格"'],                    
                     version: 'v0.8',
                     date: '2023/03/17',

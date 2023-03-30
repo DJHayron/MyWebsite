@@ -33,8 +33,8 @@ export default {
                 {
                     question: this.$refs.question_content.value,
                 })
-                .then( (response) => alert(response['data']['status']))
-                .catch( (error) => alert(error))
+                .then( (response) => console.log(response['data']['status']))
+                .catch( (error) => console.log(error))
                 this.$refs.question_content.value = ''
             }
         }
@@ -43,7 +43,7 @@ export default {
         this.axios.get(this.apiUrl + '/getQuestion')
         .then( (response) => {
             this.data = response['data']['data']
-        }).catch( (error) => alert(error))
+        }).catch( (error) => console.log(error))
     }
 }
 </script>
