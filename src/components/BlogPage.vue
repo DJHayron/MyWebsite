@@ -10,7 +10,7 @@
 import { buildDirectiveArgs } from '@vue/compiler-core';
 
 export default {
-	name: "BlogCard",
+	name: "BlogPage",
 	props: {
 		data: {
 			title: String,

@@ -16,19 +16,15 @@ export default {
     },
     data() {
         return{
-            data: [
-                {
-                    title: "test1",
-                    latestUpdateDate: "YYYY/MM/DD",
-                    mainContent: `Test`
-                },
-                {
-                    title: "test2",
-                    latestUpdateDate: "YYYY/MM/DD",
-                    mainContent: `Test`
-                }
-            ]
+            apiUrl: 'http://127.0.0.1:5000',
+            data: Array
         }
+    },
+    created() {
+        this.axios.get(this.apiUrl + '/getBlog')
+        .then((response) => {
+            this.data = response['data']['data']
+        }).catch((error) => console.log(error))
     }
 }
 </script>

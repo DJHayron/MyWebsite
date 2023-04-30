@@ -27,9 +27,9 @@ export default {
             updateLog: [
                 {
                     head: '更新內容',
-                    body: [],                    
+                    body: ['更新 後端getBlog'],
                     version: 'v0.10',
-                    date: '2023/03/29',
+                    date: '2023/04/30',
                     isOpen: false
                 },
                 {

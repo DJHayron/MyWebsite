@@ -41,9 +41,9 @@ export default {
     },
     created() {
         this.axios.get(this.apiUrl + '/getQuestion')
-        .then( (response) => {
+        .then((response) => {
             this.data = response['data']['data']
-        }).catch( (error) => console.log(error))
+        }).catch((error) => console.log(error))
     }
 }
 </script>
