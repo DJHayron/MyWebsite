@@ -35,6 +35,13 @@ export default {
 			updateLog: [
 				{
 					head: '更新內容',
+					body: ['修正 BlogPage版型'],
+					version: 'v0.11',
+					date: '2023/05/03',
+					isOpen: false
+				},
+				{
+					head: '更新內容',
 					body: ['更新 後端getBlog Api', '新增 BlogPage', '修正 一些小錯誤', '使用 markdown-it 重新渲染文章內容', '使用 後端模組化'],
 					version: 'v0.10',
 					date: '2023/04/30 ~ 05/02',

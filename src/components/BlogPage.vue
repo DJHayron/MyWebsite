@@ -1,14 +1,15 @@
-<template>
-	<button type="button" @click="this.$emit('back-to-list')"
-		class="float-left focus:outline-none text-white bg-orange-400 hover:bg-orange-400 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-600">
-		返回
-	</button>
-	<div id="md-page" class="w-fulll">
+<template>	
+	<div id="md-page" class="w-full">
+		<button type="button" @click="this.$emit('back-to-list')"
+		class="float-left focus:outline-none text-white bg-orange-400 hover:bg-orange-400 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 m-1 dark:focus:ring-yellow-600">
+			返回
+		</button>
 		<div class="flex justify-center text-5xl py-10">{{ data.title }}</div>
+		<div class="right-0">{{ data.date }}</div>
 		<hr class="pb-8"/>
-		<article class="prose-base">
+		<span class="prose dark:prose-invert prose-slate">
 			<div v-html="renderedMarkdown"></div>
-		</article>
+		</span>
 	</div>
 </template>
 

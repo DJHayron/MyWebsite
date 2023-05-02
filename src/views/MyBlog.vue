@@ -1,7 +1,13 @@
 <template>
 	<div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fade animate-fadeIn">
 		<div class="w-4/5 h-full">
-			<!-- <BlogCard v-for="(item, key) in data" :key="key" :data="item"></BlogCard> -->
+			<div class="py-8">
+				<div class="float-right">
+					TODO: 排序
+					TODO: 搜尋
+					TODO: 標籤
+				</div>
+			</div>
 			<div v-if="selectedBlog">
 				<BlogPage :data="selectedBlog" @back-to-list="returnToBlogList"></BlogPage>
 			</div>
