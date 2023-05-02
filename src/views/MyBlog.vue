@@ -22,36 +22,33 @@ import BlogCard from '@/components/BlogCard.vue'
 import BlogPage from '@/components/BlogPage.vue'
 import {defineComponent} from "vue"
 
-export default defineComponent(
-	{
-		components: {
-			BlogCard,
-			BlogPage
+export default {
+	components: {
+		BlogCard,
+		BlogPage
+	},
+	data() {
+		return {
+			apiUrl: 'http://127.0.0.1:5000/api',
+			data: Array,
+			isConnect: false,
+			selectedBlog: null
+		}
+	},
+	created() {
+		this.axios.get(this.apiUrl + '/getBlog')
+			.then((response) => {
+				this.data = response['data']['data']
+				this.isConnect = true
+			}).catch((error) => console.log(error))
+	},
+	methods: {
+		getBlogPage(blog) {
+			this.selectedBlog = blog
 		},
-		data() {
-			return {
-				apiUrl: 'http://127.0.0.1:5000/api',
-				data: Array,
-				isConnect: false,
-				selectedBlog: null
-			}
-		},
-		created() {
-			this.axios.get(this.apiUrl + '/getBlog')
-				.then((response) => {
-					this.data = response['data']['data']
-					this.isConnect = true
-				}).catch((error) => console.log(error))
-		},
-		methods: {
-			getBlogPage(blog) {
-				this.selectedBlog = blog
-				console.log(blog)
-			},
-			returnToBlogList() {
-				this.selectedBlog = null
-			}
+		returnToBlogList() {
+			this.selectedBlog = null
 		}
 	}
-)
+}
 </script>

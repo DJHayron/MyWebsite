@@ -35,23 +35,23 @@ export default {
 			updateLog: [
 				{
 					head: '更新內容',
-					body: ['更新 後端getBlog'],
+					body: ['更新 後端getBlog Api', '新增 BlogPage', '修正 一些小錯誤', '使用 markdown-it 重新渲染文章內容', '使用 後端模組化'],
 					version: 'v0.10',
-					date: '2023/04/30',
+					date: '2023/04/30 ~ 05/02',
 					isOpen: false
 				},
 				{
 					head: '新增內容',
-					body: ['更新 優化navbar功能', '新增 淡入動畫', '新增 部落格card'],
+					body: ['更新 優化navbar功能', '新增 淡入動畫', '新增 BlogCard'],
 					version: 'v0.9',
-					date: '2023/03/22',
+					date: '2023/03/22 ~ 24',
 					isOpen: false
 				},
 				{
 					head: '新增內容',
-					body: ['更新 "TODO"內容', '新增 "我的作品"', '修正 版型.新增 "部落格"'],
+					body: ['更新 "TODO"內容', '新增 "我的作品"', '修正 版型', '新增 "部落格"'],
 					version: 'v0.8',
-					date: '2023/03/17',
+					date: '2023/03/17 ~ 18',
 					isOpen: false
 				},
 				{
@@ -79,7 +79,7 @@ export default {
 					head: '新增頁面',
 					body: ['新增 "對我發問"', '在某處埋下了一顆彩蛋'],
 					version: 'v0.4',
-					date: '2023/01/24~25',
+					date: '2023/01/24 ~ 25',
 					isOpen: false
 				},
 				{

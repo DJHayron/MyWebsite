@@ -7,7 +7,9 @@
 					class="border border-gray-300  text-sm rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-400 dark:placeholder-gray-400  dark:focus:ring-orange-400 dark:focus:border-orange-400">
 			</div>
 			<button type="button" @click="Send()"
-				class="float-right focus:outline-none text-white bg-orange-400 hover:bg-orange-400 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-600">Send</button>
+				class="float-right focus:outline-none text-white bg-orange-400 hover:bg-orange-400 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-600">
+				Send
+			</button>
 		</div>
 		<div class="md:w-4/5 w-1/2 h-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
 			<QuestionCard v-for="(item, key) in data" :key="key" :data="item"></QuestionCard>

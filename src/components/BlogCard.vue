@@ -1,5 +1,5 @@
 <template>
-	<div id="blog-card" @click="openBlogPage()" class="relative block w-full h-[15vh] mb-5 p-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-900 group hover:scale-[99%]">
+	<div id="blog-card" @click="openBlogPage" class="relative block w-full h-[15vh] mb-5 p-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-900 group hover:scale-[99%]">
 		<div class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-orange-400">{{ data.title }}</div>    
 		<span class="m-2 text-xl" >
 			{{ data.summary }}
