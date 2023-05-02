@@ -20,6 +20,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 library.add(fas, fab, far)
 
+// markdown css
+import 'highlight.js/styles/monokai.css'
+
 const app = createApp(App)
 
 // 載入 font awesome
@@ -27,6 +30,7 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.use(VueAxios, axios)
 app.use(createPinia())
+
 app.use(router)
 
 app.mount('#app')
