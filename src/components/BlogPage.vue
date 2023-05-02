@@ -7,17 +7,19 @@
 </template>
 
 <script>
-import { buildDirectiveArgs } from '@vue/compiler-core';
+import { buildDirectiveArgs } from '@vue/compiler-core'
 
 export default {
 	name: "BlogPage",
+	components: { 
+		buildDirectiveArgs
+	},
 	props: {
 		data: {
 			title: String,
 			date: String,
 			content: String
 		}
-	},
-	components: { buildDirectiveArgs }
+	}
 }
 </script>

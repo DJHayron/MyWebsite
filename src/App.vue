@@ -55,8 +55,8 @@ export default {
           path: '/about'
         },
         {
-          name: '更新日誌',
-          path: '/log'
+          name: '部落格',
+          path: '/blog'
         },
         {
           name: 'TODO',
@@ -69,10 +69,10 @@ export default {
         {
           name: '我的作品',
           path: '/project'
-        },
+        },        
         {
-          name: '部落格',
-          path: '/blog'
+          name: '更新日誌',
+          path: '/log'
         }
       ],
       isDark: false,
