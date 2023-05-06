@@ -37,12 +37,12 @@ export default {
 	methods: {
 		Send() {
 			if (this.$refs.question_content.value != '') {
-				this.axios.post(this.apiUrl + '/newQuestion',
-					{
-						question: this.$refs.question_content.value,
-					})
-					.then((response) => alert(response['data']['status']))
-					.catch((error) => alert(error))
+				this.axios.post(this.apiUrl + '/newQuestion', {
+					question: this.$refs.question_content.value,
+					date: new Date().toLocaleString()
+				})
+				.then((response) => alert(response['data']['status']))
+				.catch((error) => alert(error))
 				this.$refs.question_content.value = ''
 			}
 		}

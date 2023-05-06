@@ -5,7 +5,7 @@
 			返回
 		</button>
 		<div class="flex justify-center text-5xl py-10">{{ data.title }}</div>
-		<div class="right-0">{{ data.date }}</div>
+		<div class="right-0">最後更新時間:{{ data.date }}</div>
 		<hr class="pb-8"/>
 		<span class="prose dark:prose-invert prose-slate">
 			<div v-html="renderedMarkdown"></div>
