@@ -1,21 +1,25 @@
 <template>
 	<div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fadeIn">
-		<div id="input" class="w-1/2 mb-6">
-			<div class="mb-2">
-				<label for="default-input" class="block mb-2 text-sm font-medium">你也可以發問!! (看情況回覆)</label>
-				<input type="text" @keypress.enter="Send()" ref="question_content"
-					class="border border-gray-300  text-sm rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-400 dark:placeholder-gray-400  dark:focus:ring-orange-400 dark:focus:border-orange-400">
+		<div class="w-4/5">
+			<div id="input" class="w-full mb-16">
+				<div class="mb-2">
+					<label for="default-input" class="block mb-2 text-sm font-medium">你也可以發問!! (看情況回覆)</label>
+					<input type="text" @keypress.enter="Send()" ref="question_content"
+						class="border border-stone-300  text-sm rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p-2.5 dark:bg-stone-700 dark:border-stone-400 dark:placeholder-stone-400  dark:focus:ring-orange-400 dark:focus:border-orange-400">
+				</div>
+				<button type="button" @click="Send()"
+					class="float-right focus:outline-none text-white bg-orange-400 hover:bg-orange-400 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-600">
+					Send
+				</button>
 			</div>
-			<button type="button" @click="Send()"
-				class="float-right focus:outline-none text-white bg-orange-400 hover:bg-orange-400 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-600">
-				Send
-			</button>
-		</div>
-		<div class="md:w-4/5 w-1/2 h-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-			<QuestionCard v-for="(item, key) in data" :key="key" :data="item"></QuestionCard>
-		</div>
-		<div v-if="!isConnect">
-			連線失敗QQ
+			<div class="w-full">
+				<div class="flex flex-wrap">
+				<QuestionCard v-for="(item, key) in data" :key="key" :data="item"></QuestionCard>
+			</div>
+			</div>
+			<div v-if="!isConnect">
+				連線失敗QQ
+			</div>
 		</div>
 	</div>
 </template>

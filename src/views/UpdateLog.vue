@@ -3,7 +3,7 @@
 		<div id="updateLog-content" class="w-4/5" v-for="(item, key) in updateLog" :key="key" :data="item">
 			<div id="head">
 				<button type="button" @click="ReadMore(item)"
-					class="w-full flex items-center justify-between p-5 font-medium text-left border border-gray-300 rounded-t-xl bg-gray-200 dark:bg-gray-800 dark:border-gray-900 hover:bg-gray-300 dark:hover:bg-gray-900"
+					class="w-full flex items-center justify-between p-5 font-medium text-left border border-stone-300 rounded-t-xl bg-stone-200 dark:bg-stone-800 dark:border-stone-900 hover:bg-stone-300 dark:hover:bg-stone-900"
 					:class="[item.isOpen ? '' : 'rounded-b-xl']">
 					<span>{{ item.head }} {{ item.version }}</span>
 					<svg data-accordion-icon class="w-6 h-6 shrink-0" :class="[item.isOpen ? 'rotate-180' : '']" fill="currentColor"
@@ -15,7 +15,7 @@
 				</button>
 			</div>
 			<div id="body" :class="[item.isOpen ? '' : 'hidden']">
-				<div class="p-5 font-normal border rounded-b-xl border-gray-200 dark:border-gray-900 dark:bg-gray-700">
+				<div class="p-5 font-normal border rounded-b-xl border-stone-200 dark:border-stone-900 dark:bg-stone-700">
 					<ul>
 						<li v-for="(things, key) in item.body" :key="key">
 							<p class="mb-2">>{{ things }}</p>
@@ -35,7 +35,7 @@ export default {
 			updateLog: [
 				{
 					head: '更新內容',
-					body: ['修正 BlogPage版型'],
+					body: ['修正 BlogPage版型', '更新 暗黑模式配色'],
 					version: 'v0.11',
 					date: '2023/05/03',
 					isOpen: false

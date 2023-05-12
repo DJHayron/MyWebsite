@@ -1,7 +1,7 @@
 <template>
 	<div class="relative md:top-20 top-16 w-full h-full flex flex-col items-center py-6 animate-fadeIn">
 		<div class="w-4/5">
-			<div class="absolute bg-white border border-gray-200 rounded-xl dark:bg-gray-800 dark:border-gray-900 flex flex-wrap p-4">
+			<div class="absolute bg-white border border-stone-200 rounded-xl dark:bg-stone-800 dark:border-stone-900 flex flex-wrap p-4">
 				<div class="max-sm:m-auto mx-10 my-auto min-w-[100px] min-h-[100px] w-[100px] h-[100px] rounded-full bg-red-400">
 					<img src=""/>
 				</div>
